@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\brave\\miniconda3\\envs\\dsa-core\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "jupyter.interactiveWindow.kernelProvider": "local"
+
+
+}
