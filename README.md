@@ -37,6 +37,7 @@ These datasets are clustered to identify **temporal and geographic hotspots** fo
 - **Event data**: geospatial maps showing clustered events by day of week  
 - **Flight data**: timeline graphs showing high-density arrival windows  
 - Graphs, filters, data extraction, and style components modularized into reusable Python functions
+- Screenshots of the dashboard are located in the assets folder
 
 ---
 
