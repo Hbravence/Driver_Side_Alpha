@@ -47,4 +47,24 @@ DSA is modular by design:
 - Architecture is built to scale across multiple cities  
 - Future roadmap includes cloud-native integration and investor-ready deployment
 
+## Cloud migration from Local to AWS 
+- AWS Lambda to handle the the API pulls from a weekly basis.
+- Which the would land into S3 folder, which would event trigger another Lambda function which would handle the cluster modeling.
+- The modeled data would live in S3 which athena would bull drictly on top. 
+ - the Folder system would Look something like below
+ cities/
+├── flight/
+│   ├── raw/
+│   │   └── YYYY-MM-DD/
+│   └── modeled/
+│       └── YYYY-MM-DD/
+├── event/
+│   └── event_data/
+│       ├── city_event/
+│       │   ├── raw/
+│       │   │   └── YYYY-MM-DD/
+│       │   └── modeled/
+│       │       └── YYYY-MM-DD/
+│       └── venue_data/
+│           └── YYYY-MM-DD/
 ---
